@@ -138,4 +138,28 @@ class data_controller extends \core_customfield\data_controller {
 
         return null;
     }
+
+    /**
+     * Compare l'objet courant avec un autre objet.
+     *
+     * @param \core_customfield\data_controller $otherobject Un objet a comparé avec l'objet courant.
+     *
+     * @return int Retourne 0 si les 2 objets sont identiques,
+     *             un entier négatif si l'objet courant est inférieur à l'autre objet ou
+     *             un entier positif si l'objet courant est supérieur à l'autre objet.
+     */
+    public function compare_with(\core_customfield\data_controller $otherobject): int {
+        $value1 = $this->get_value() ?? '';
+        $value2 = $otherobject->get_value() ?? '';
+
+        if (empty($value1) === true) {
+            $value1 = 7;
+        }
+
+        if (empty($value2) === true) {
+            $value2 = 7;
+        }
+
+        return strcoll($value1, $value2);
+    }
 }

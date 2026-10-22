@@ -25,6 +25,13 @@
 defined('MOODLE_INTERNAL') || die();
 
 $string['default_field_settings'] = 'Réglages par défaut du champ « Jour de la semaine »';
+$string['friday'] = 'Vendredi';
+$string['monday'] = 'Lundi';
 $string['pluginname'] = 'Jour de la semaine';
 $string['privacy:metadata'] = 'Le plugin champ « Jour de la semaine » n’enregistre aucune donnée personnelle.';
+$string['saturday'] = 'Samedi';
+$string['sunday'] = 'Dimanche';
 $string['the_selected_value_is_invalid'] = 'La valeur sélectionnée n’est pas valide.';
+$string['thursday'] = 'Jeudi';
+$string['tuesday'] = 'Mardi';
+$string['wednesday'] = 'Mercredi';

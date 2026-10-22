@@ -84,7 +84,7 @@ class field_controller extends \core_customfield\field_controller {
         $weekdays = ['' => ''];
 
         foreach (self::$days as $numweekday => $weekday) {
-            $weekdays[$numweekday] = get_string($weekday, 'calendar');
+            $weekdays[$numweekday] = get_string($weekday, 'customfield_weekday');
         }
 
         return $weekdays;

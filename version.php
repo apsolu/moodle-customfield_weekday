@@ -27,7 +27,7 @@ defined('MOODLE_INTERNAL') || die();
 $plugin->component = 'customfield_weekday';
 
 // The current plugin version (Date: YYYYMMDDXX).
-$plugin->version   = 2026092300;
+$plugin->version   = 2026111600;
 
 // Requires Moodle 5.2.0.
 $plugin->requires  = 2026042000;
